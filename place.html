@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madagascar</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Madagascar</h1>
+        <div class="green-line"></div>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(max-width: 767px)" srcset="images/smaller-screen.webp">
+                <source media="(min-width: 768px)" srcset="images/large-hero.webp">
+                <img src="images/smaller-screen.webp" alt="Madagascar landscape">
+            </picture>
+        </div>
+        <div class="data">
+            <div class="data-head">
+                <h2>Data</h2>
+            </div>
+            <div class="data-body">
+                <div class="data-item">
+                    <span class="data-label">Area:</span>
+                    <span class="data-value">587,041 sq km</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Population:</span>
+                    <span class="data-value">27,691,018</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Capital:</span>
+                    <span class="data-value">Antananarivo</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Language:</span>
+                    <span class="data-value">Malaysian, French</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Currency:</span>
+                    <span class="data-value">Malagasy Ariary</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Time zone:</span>
+                    <span class="data-value">UTC+3</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Calling Code:</span>
+                    <span class="data-value">+261</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Internet TLD:</span>
+                    <span class="data-value">mg</span>
+                </div>
+        </div>
+        </div>
+        <div class="weather">
+             <div class="data-head">
+                <h2>Weather <span class="weather-icon-emoticon">⛅</span></h2>
+            </div>
+            <div class="weather-icon-container">
+                <img src="images/cloudy.svg" class="weather-icon-svg" alt="Partly Cloudy">
+            </div>
+            <div class="data-body">
+                <div class="data-item">
+                    <span class="data-label">Temparature:</span>
+                    <span class="data-value">10 °C</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Conditions:</span>
+                    <span class="data-value">Partly Cloudy</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Wind:</span>
+                    <span class="data-value">5 km/h</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Wind Chill:</span>
+                    <span id="wind-chill" class="data-value"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Madagascar | Akanifiok Basil | WDD 131</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+    
+</body>
+</html>

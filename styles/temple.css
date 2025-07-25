@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: black;
+    background-color:white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #5F15E0;
+    color: white;
+    padding: 1.5rem;
+    position: relative;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin: 0;
+} 
+
+
+/* header {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(27, 7, 59);
+    color: white;
+    align-items: center;
+    padding: 20px;
+}*/
+
+/* nav ul{
+    display: none;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}  */
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+}
+
+.nav-menu{
+    position: fixed;
+    right: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 50%;
+    text-align: left;
+    list-style: none;
+    border-radius: 8px;
+    padding-left: 30px;
+}
+
+.nav-items {
+    margin: 16px 0;
+}
+
+.nav-items:hover{
+    color: aqua;
+}
+
+.nav-menu.active {
+    right: 0;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.container h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1f2937;
+    font-weight: bold;
+}
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: auto;
+}
+
+.image-gallery figure{
+    text-align: center;
+    border-radius: 8px;
+    box-shadow:0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.image-gallery figcaption {
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 1.125rem;
+}
+
+footer {
+    background-color: #5F15E0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+
+@media(min-width: 768px){
+    
+    .nav-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center; /* Vertically align items with the header */
+        position: static; /* Remove fixed positioning */
+        right: auto; /* Reset right property */
+        top: auto; /* Reset top property */
+        width: auto; /* Remove fixed width */
+        background-color: transparent; /* Match header background or set to transparent */
+        padding: 0; /* Remove mobile padding */
+        flex-direction: row; /* Ensure horizontal layout */
+        gap: 30px; /* Add spacing between items, as in your commented-out code */
+        border-radius: 0; /* Remove border-radius */
+    }
+
+    .nav-items {
+        margin: 0; /* Remove vertical margin for horizontal layout */
+    }
+
+    .nav-items a {
+        color: white; /* Ensure links match header text color */
+        text-decoration: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .image-gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
