@@ -172,7 +172,7 @@ document.getElementById("home").addEventListener("click", () => {
   displayTemple(byuTemples);
 });
 
-document.getElementById("small-temple").addEventListener("click", () => {
+document.getElementById("smalls-temple").addEventListener("click", () => {
   displaySmallTemple(byuTemples);
 });
 

@@ -15,6 +15,9 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+header h1 {
     font-weight: bold;
     font-size: 24px;
 }
