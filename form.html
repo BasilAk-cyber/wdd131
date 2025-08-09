@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Akanifiok Basil.">
+    <meta name="author" content="Akanifiok BASIL">
+    <title>WDD 131 – Dynamic Web Fundamentals – Product Review.</title>
+    <link rel="stylesheet" href="styles/form.css">
+
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        Product Review
+    </header>
+    <main class="container">
+        <form method="get" action="review.html">
+            <div id="product">
+                <label for="product-select">Product Name:</label>
+                <select id="product-select" name="product" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                    <!-- Options will be added dynamically -->
+                </select>
+            </div>
+
+            <div id="ratings">
+                <fieldset>
+                    <legend>Overall Rating:</legend>
+                    <div class="rating-container">
+                        <div class="rating-choice">
+                            <input type="radio" name="rating" value="1" id="rating-1" required>
+                            <label for="rating-1">&star;</label>
+                        </div>
+                        <div class="rating-choice">
+                            <input type="radio" name="rating" value="2" id="rating-2">
+                            <label for="rating-2">&star;&star;</label>
+                        </div>
+                        <div class="rating-choice">
+                            <input type="radio" name="rating" value="3" id="rating-3">
+                            <label for="rating-3">&star;&star;&star;</label>
+                        </div>
+                        <div class="rating-choice">
+                            <input type="radio" name="rating" value="4" id="rating-4">
+                            <label for="rating-4">&star;&star;&star;&star;</label>
+                        </div>
+                        <div class="rating-choice">
+                            <input type="radio" name="rating" value="5" id="rating-5">
+                            <label for="rating-5">&star;&star;&star;&star;&star;</label>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="form-date">
+                <label for="install-date">Date of Installation:</label>
+                <input type="date" id="install-date" name="installDate" required>
+            </div>
+    
+            <div class="form-group">
+                <fieldset>
+                    <legend>Which features did you find usefull in the product?<br><i>(Check all that apply)</i></legend>
+                    <div class="features-container">
+                        <div></div>
+                            <input type="checkbox" name="features" value="durability" id="feature-durability">
+                            <label for="feature-durability">Durability</label><br>
+                            <input type="checkbox" name="features" value="ease-of-use" id="feature-ease">
+                            <label for="feature-ease">Ease of Use</label><br>
+                            <input type="checkbox" name="features" value="design" id="feature-design">
+                            <label for="feature-design">Design</label><br>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="review">
+                <label for="review-text">Written Review:</label>
+                <textarea id="review-text" name="review"></textarea>
+            </div>
+    
+            <!-- User Name -->
+            <div class="name">
+                <label for="user-name">Your Name:</label>
+                <input type="text" id="user-name" name="userName">
+            </div>
+            <input type="submit" value="Submit Review" class="submit">
+        </form>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Temple Album | Akanifiok Basil | WDD 131</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
