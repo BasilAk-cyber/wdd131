@@ -1,0 +1,105 @@
+/* project/styles/siteplan.css */
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+    --accent1-color: #FFD166;
+    --accent2-color: #F7F7F7;
+    --heading-font: 'Montserrat', sans-serif;
+    --text-font: 'Open Sans', sans-serif;
+  }
+  
+  body {
+    font-family: var(--text-font);
+    margin: 0;
+    padding: 0;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 -4px 6px -2px rgba(0, 0, 0, 0.3); /* Top box shadow */
+  }
+  
+  header h1 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: var(--accent2-color);
+    border-radius: 8px;
+  }
+  
+  h2 {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+  }
+  
+  p, ul {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  section img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 -4px 6px -2px rgba(0, 0, 0, 0.3); /* Top box shadow */
+  }
+  
+  footer p {
+    font-family: var(--heading-font);
+    font-size: 1rem;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .social-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  @media (max-width: 600px) {
+    header, footer {
+      padding: 0.5rem;
+      box-shadow: 0 -3px 4px -1px rgba(0, 0, 0, 0.3);
+    }
+    header h1 {
+      font-size: 1.5rem;
+    }
+    main {
+      padding: 1rem;
+    }
+    section img {
+      max-width: 100px;
+    }
+    .social-icon {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+  }

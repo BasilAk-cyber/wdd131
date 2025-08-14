@@ -1,0 +1,64 @@
+@media(min-width: 768px)  {
+    .nav-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center; /* Vertically align items with the header */
+        position: static; /* Remove fixed positioning */
+        right: auto; /* Reset right property */
+        top: auto; /* Reset top property */
+        width: auto; /* Remove fixed width */
+        background-color: transparent; /* Match header background or set to transparent */
+        padding: 0; /* Remove mobile padding */
+        flex-direction: row; /* Ensure horizontal layout */
+        gap: 30px; /* Add spacing between items, as in your commented-out code */
+        border-radius: 0; /* Remove border-radius */
+    }
+
+    .nav-items {
+        margin: 0; /* Remove vertical margin for horizontal layout */
+    }
+
+    .nav-items a {
+        color: black; /* Ensure links match header text color */
+        text-decoration: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .hero {
+        width: 100%;
+        height: 500px;
+        overflow: hidden;
+    }
+
+    .hero picture {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .award-section {
+        grid-template-columns: 200px 200px;
+        justify-content: space-around;
+        gap: 50px;
+        margin: auto;
+        margin-top: 40px;
+    }
+
+    #books {
+        grid-template-columns: 230px 230px 230px;
+        justify-content: space-around;
+        gap: 10px;
+        margin: auto;
+        margin-top: 20px
+    }
+
+    #activity {
+        grid-template-columns: 230px 230px 230px;
+        margin: auto;
+        justify-content: space-around;
+    }
+}
